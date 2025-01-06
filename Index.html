@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: rgb(166, 200, 241);
+        color: aliceblue;
+        font-family: 'Poppins',sans-serif; 
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background: rgb(1, 1, 53);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255) ;
+    }
+    nav ul li a:hover{
+        color: rgb(221, 108, 127);
+        font-size: 1.1rem;
+    }
+    .left{
+        font-size: 1.5rem;
+    }
+    .rightsection{
+      width: 80%;
+    }
+    .leftsection{
+      /* background-color  : red; */
+      font-size: 3rem;
+      margin: 70px 0;
+    }
+  
+    .leftsection .btn{
+        padding: 12px;
+        background-color: #120550;
+        color: #fff;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+    
+    .sectionone{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:120px 0;
+    }
+    .sectionone >div{
+        width:30%;
+        
+    }
+    .rightsection img{
+        width: 90%;
+        margin:40px 0;
+    }
+    .purple{
+        color: rgb(125, 23, 125);
+    }
+    .Pink{
+        color: rgb(243, 194, 202);
+    }
+    #element{
+        color: rgb(248, 42, 42);
+    }
+    .sectionTwo{
+        max-width: 80vw;
+        margin:auto;
+        height: 80vh;
+    }
+    .sectionTwo h1{
+        font-size: 1.5rem;
+    }
+    .sectionTwo .box{
+        background-color: rgb(0, 0, 0);
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;   
+
+    }
+    .sectionTwo .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: rgb(0, 0, 0);
+        margin: 0 120px;
+    }
+    .image-top{
+       width:45px;
+       position: relative;
+       top: -55px;
+       left: -9px;
+    }
+
+    .vertical-title{
+        
+        position: relative;
+        top: 75px;
+        width: 150pxS;
+
+    }
+    .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: rgb(91, 90, 90);
+        font-size: 9px;
+        width: 150px;
+
+    }
+    .sectionThree{
+        max-width: 80vw;
+        margin:auto;
+        height: 80vh;
+    }
+    .sectionThree h1{
+        font-size: 1.5rem;
+    }
+    .sectionThree .box{
+        background-color: rgb(0, 0, 0);
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;   
+
+    }
+    .sectionThree .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: rgb(0, 0, 0);
+        margin: 0 120px;
+    }
+    .image-top{
+       width:50px;
+       position: relative;
+       top: -60px;
+       left: -9px;
+       
+    }
+
+    .vertical-title{
+        
+        position: relative;
+        top: 75px;
+        width: 150pxS;
+    }
+    
+    .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: rgb(80, 79, 79);
+        font-size: 9px;
+        width: 150px;
+
+    }
+footer {
+  background-color: #090131;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-links a:hover {
+    color: rgb(221, 108, 127);
+        font-size: 1.1rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-social a:hover {
+    color: rgb(221, 108, 127);
+    font-size: 1.1rem;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+}
+
+</style>
+<body>
+    
+    <header>
+        <nav>
+            <div class="left"> Kunal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionone">
+            <div class="leftsection"> HI, My name is 
+                <span class="purple">Kunal</span>
+                <div> And I am Web passionate </div>
+                <!-- <span class="Pink">Developer</span> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="">Download Resume</button>
+                    <button class="btn"onclick="window.open('https://github.com/Kunal9988','_blank')"> Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection"> 
+                <img src="/bg4.png" alt=""> </div>
+ 
+        </section>
+        <section class="sectionTwo">
+            <span class="grey">What i done </span>
+            <h1>My Projects </h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="/HTMLlogo.png" alt="dev pic">
+                    <div class="vertical-title">
+                            Portfolio website </div>
+                    <div class="vertical-desc">
+                        "My portfolio website is a personal showcase of my skills, created using HTML, CSS, and JavaScript. It highlights my projects, demonstrating hands-on experience in various technologies, and features a section for certifications. The responsive design offers a clear, user-friendly view of my expertise for potential employers."
+                    
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top"src="images/NodeJS_Logo.png" alt="Developer">
+                    <div class="vertical-title">
+                        Ecommerce Website </div>
+                    <div class="vertical-desc">
+                        My eCommerce website, built with HTML, CSS, and JavaScript, showcases my skills and projects. It features a dynamic product listing, shopping cart functionality, and a secure checkout process. The site also highlights my certifications, offering a comprehensive view of my technical expertise and ability to develop functional web applications."
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top"src="py.png" alt="Developer">
+                    <div class="vertical-title">
+                        Video platform </div>
+                    <div class="vertical-desc">
+                        
+                    </div>
+                    
+                </div>
+                <!-- <div class="vertical">
+                    <img class="image-top"src="JavaLogo.png" alt="Developer">
+                    <div class="vertical-title">
+                        Java Developer</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid assumenda omnis qui facere, ad quisquam optio consequatur debitis iure rem praesentium dolores. Qui rem dignissimos ut magni perferendis accusantium et.
+                    </div>
+                    
+                </div> -->
+                
+            </div>
+        </section>
+        <section class="certification">
+            
+        </section>
+        <section class="sectionThree">
+            <span class="grey">What i done </span>
+            <h1>Certifications</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top"src="/py.png" alt="Developer">
+                    <div class="vertical-title">
+                        Complete Python Developer -by Udemy </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid assumenda omnis qui facere, ad quisquam optio consequatur debitis iure rem praesentium dolores. Qui rem dignissimos ut magni perferendis accusantium et.
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top"src="js.png" alt="Developer">
+                    <div class="vertical-title">
+                        The Complete JavaScript Course 2024:Form Zero to Expert! </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid assumenda omnis qui facere, ad quisquam optio consequatur debitis iure rem praesentium dolores. Qui rem dignissimos ut magni perferendis accusantium et.
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top"src="secu.png" alt="Developer">
+                    <div class="vertical-title">
+                        Advance Cyber Security   -by great learning</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid assumenda omnis qui facere, ad quisquam optio consequatur debitis iure rem praesentium dolores. Qui rem dignissimos ut magni perferendis accusantium et.
+                    </div>
+                    
+                </div>
+             <!-- <div class="vertical">
+                    <img class="image-top"src="JavaLogo.png" alt="Developer">
+                    <div class="vertical-title">
+                        Java Developer</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid assumenda omnis qui facere, ad quisquam optio consequatur debitis iure rem praesentium dolores. Qui rem dignissimos ut magni perferendis accusantium et.
+                    </div>
+                    
+                </div>  -->
+                
+            </div>
+        </section>
+        <Section class="aboutme">
+            
+        </Section>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-logo">
+                <h2>Kunal Kishor Mirgal</h2>
+              </div>
+          
+              <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+              </div>
+          
+              <div class="footer-social">
+                <a href="https://www.linkedin.com/in/kunal-mirgal-45ba2a220/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Kunal9988" target="_blank">GitHub</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+              </div>
+          
+              <div class="footer-copyright">
+                <p>&copy; 2025 Kunal Kishor Mirgal. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+          
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['web Developer', 'Programmer',''],
+          typeSpeed: 50,
+        });
+      </script>
+    
+</body>
+</html>
